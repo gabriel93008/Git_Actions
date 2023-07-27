@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "497aaa53-7b25-4fbe-bde8-3f66dd28e87c",
+		"name": "aula",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24569650",
+		"_collection_link": "https://www.postman.com/solar-astronaut-132851/workspace/nova-api/collection/24569650-497aaa53-7b25-4fbe-bde8-3f66dd28e87c?action=share&creator=24569650&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "/custumers/",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.predic8.de:443/shop/customers/",
+					"protocol": "https",
+					"host": [
+						"api",
+						"predic8",
+						"de"
+					],
+					"port": "443",
+					"path": [
+						"shop",
+						"customers",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/products/",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.predic8.de:443/shop/products/11",
+					"protocol": "https",
+					"host": [
+						"api",
+						"predic8",
+						"de"
+					],
+					"port": "443",
+					"path": [
+						"shop",
+						"products",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/custumers/",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstname\": \"Gabriel\",\r\n  \"lastname\": \"Imperiano\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.predic8.de:443/shop/customers/",
+					"protocol": "https",
+					"host": [
+						"api",
+						"predic8",
+						"de"
+					],
+					"port": "443",
+					"path": [
+						"shop",
+						"customers",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/custumers/",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://api.predic8.de:443/shop/customers/375",
+					"protocol": "https",
+					"host": [
+						"api",
+						"predic8",
+						"de"
+					],
+					"port": "443",
+					"path": [
+						"shop",
+						"customers",
+						"375"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
